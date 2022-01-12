@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 function MainNavigation(props) {
   return (
-    <header>
-      <div className={classes.header}>React Meetups</div>
+    <header className={classes.header}>
+      <div className={classes.logo}>React Meetups</div>
       <nav>
         <ul>
           <li>
-            <Link to="/">All the meetups</Link>
+            <Link to="/">All Meetups</Link>
           </li>
           <li>
-            <Link to="/newmeetup">Add new meetups</Link>
+            <Link to="/newmeetup">Add New Meetup</Link>
           </li>
           <li>
-            <Link to="/fav">Fav</Link>
+            <Link to="/fav">My Favorites</Link>
           </li>
           <li>
-            <Link to="/about">about</Link>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
